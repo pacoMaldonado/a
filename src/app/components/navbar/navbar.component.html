@@ -1,20 +1,29 @@
 <header
   class="fixed bg-white transition-all duration-200 top-0 w-full z-30"
   [ngClass]="isDisplacement ? 'shadow-lg pt-0' : 'pt-4'">
-  <nav class="flex px-6 max-w-screen-xl mx-auto py-2">
-    <div>
+  <nav
+    class="flex flex-wrap justify-between px-6 max-w-screen-lg mx-auto py-2 w-full">
+    <div class="border-red border-2 border-solid">
       <img
         src="assets/img/logo/icono.svg"
         alt="JM Software Developer"
         width="60"
         height="60" />
     </div>
-    <div>
-      <ul class="hidden">
-        <li>Inicio</li>
-        <li>Projectos</li>
-        <li>Blog</li>
-        <li>Contacto</li>
+    <div class="">
+      <ul class="flex items-end h-full space-x-6 px-2 text-xl font-medium">
+        <li>
+          <a class="block px-4"> Inicio </a>
+        </li>
+        <li>
+          <a class="block px-4"> Proyectos </a>
+        </li>
+        <li>
+          <a class="block px-4"> Blog </a>
+        </li>
+        <li>
+          <a class="block px-4"> Contacto </a>
+        </li>
       </ul>
     </div>
   </nav>
