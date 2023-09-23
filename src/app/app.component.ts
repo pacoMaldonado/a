@@ -2,13 +2,14 @@ import { Component, ElementRef, OnInit, inject } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { RouterOutlet } from '@angular/router'
 import { NavbarComponent } from './components/navbar/navbar.component'
+import { InicioComponent } from './components/inicio/inicio.component'
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [CommonModule, RouterOutlet, NavbarComponent],
+  imports: [CommonModule, RouterOutlet, NavbarComponent, InicioComponent],
 })
 export class AppComponent implements OnInit {
   title = 'Javi Maldonado'
