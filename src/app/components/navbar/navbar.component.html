@@ -1,0 +1,48 @@
+<header
+  class="fixed bg-white top-0 w-full z-30 flex transition-all duration-500"
+  [ngClass]="isDisplacement ? 'shadow-lg h-16' : 'h-24'">
+  <nav class="flex px-6 py-2 w-full max-w-screen-lg mx-auto">
+    <div class="flex h-full w-1/4">
+      <img
+        class=""
+        src="assets/img/logo/icono.svg"
+        alt="JM Software Developer"
+        width="100%"
+        height="100%" />
+    </div>
+    <div class="w-3/4 flex justify-end">
+      <ul
+        class="hidden space-x-6 py-1 px-2 font-medium md:flex justify-end w-full leading-8 menu uppercase"
+        [ngClass]="isDisplacement ? 'text-[1.30rem]' : 'text-2xl'">
+        <li class="flex items-center h-full px-2">
+          <a
+            class="relative transition-[font-size] duration-300 delay-200 after:bg-blue-700 after:absolute after:left-0 after:top-[calc(100%+-4px)] after:w-full after:h-1 after:transition-opacity after:duration-500 hover:after:opacity-100 after:opacity-0"
+            href="#seccion-1">
+            Inicio
+          </a>
+        </li>
+        <li class="flex items-center h-full">
+          <a
+            class="relative transition-[font-size] duration-300 delay-200 after:bg-blue-700 after:absolute after:left-0 after:top-[calc(100%+-4px)] after:w-full after:h-1 after:transition-opacity after:duration-500 hover:after:opacity-100 after:opacity-0"
+            href="#seccion-2">
+            Proyectos
+          </a>
+        </li>
+        <li class="flex items-center h-full">
+          <a
+            class="relative transition-[font-size] duration-300 delay-200 after:bg-blue-700 after:absolute after:left-0 after:top-[calc(100%+-4px)] after:w-full after:h-1 after:transition-opacity after:duration-500 hover:after:opacity-100 after:opacity-0"
+            href="#seccion-3">
+            Blog
+          </a>
+        </li>
+        <li class="flex items-center h-full">
+          <a
+            class="relative transition-[font-size] duration-300 delay-200 after:bg-blue-700 after:absolute after:left-0 after:top-[calc(100%+-4px)] after:w-full after:h-1 after:transition-opacity after:duration-500 hover:after:opacity-100 after:opacity-0"
+            href="#seccion-4">
+            Contacto
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
