@@ -1,29 +1,46 @@
 <header
-  class="fixed bg-white transition-all duration-200 top-0 w-full z-30"
-  [ngClass]="isDisplacement ? 'shadow-lg pt-0' : 'pt-4'">
-  <nav
-    class="flex flex-wrap justify-between px-6 max-w-screen-lg mx-auto py-2 w-full">
-    <div class="border-red border-2 border-solid">
+  class="fixed bg-white top-0 w-full z-30 flex transition-all duration-500"
+  [ngClass]="isDisplacement ? 'shadow-lg h-16' : 'h-24'">
+  <nav class="flex px-6 py-2 w-full max-w-screen-lg mx-auto">
+    <div class="flex h-full w-1/4">
       <img
+        class=""
         src="assets/img/logo/icono.svg"
         alt="JM Software Developer"
-        width="60"
-        height="60" />
+        width="100%"
+        height="100%" />
     </div>
-    <div class="">
+    <div class="w-3/4 flex justify-end">
       <ul
-        class="hidden items-end h-full space-x-6 px-2 text-xl font-medium md:flex">
-        <li>
-          <a class="block px-2"> Inicio </a>
+        class="hidden space-x-6 py-1 px-2 font-medium md:flex justify-end w-full leading-8 menu"
+        [ngClass]="isDisplacement ? 'text-[1.30rem]' : 'text-2xl'">
+        <li class="flex items-center h-full px-2">
+          <a
+            class="transition-[font-size] duration-300 delay-200"
+            href="#seccion-1">
+            Inicio
+          </a>
         </li>
-        <li>
-          <a class="block px-2"> Proyectos </a>
+        <li class="flex items-center h-full">
+          <a
+            class="transition-[font-size] duration-300 delay-200"
+            href="#seccion-2">
+            Proyectos
+          </a>
         </li>
-        <li>
-          <a class="block px-2"> Blog </a>
+        <li class="flex items-center h-full">
+          <a
+            class="transition-[font-size] duration-300 delay-200"
+            href="#seccion-3">
+            Blog
+          </a>
         </li>
-        <li>
-          <a class="block px-2"> Contacto </a>
+        <li class="flex items-center h-full">
+          <a
+            class="transition-[font-size] duration-300 delay-200"
+            href="#seccion-4">
+            Contacto
+          </a>
         </li>
       </ul>
     </div>
